@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #faf2e9;
+  --secondary-color: #141311;
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.6rem;
+  --spacing-lg: 3.2rem;
+  --spacing-xl: 6.4rem;
+  --spacing-xxl: 12.8rem;
+}
+
+body {
+  background-image: url(/bg.jpg);
+  background-size: cover;
+  color: var(--primary-color);
+}
+
+main {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 60vh;
+}
+
+.hero-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
