@@ -13,12 +13,16 @@ html {
 :root {
   --primary-color: #faf2e9;
   --secondary-color: #141311;
-  --spacing-xs: 0.4rem;
-  --spacing-sm: 0.8rem;
-  --spacing-md: 1.6rem;
-  --spacing-lg: 3.2rem;
-  --spacing-xl: 6.4rem;
-  --spacing-xxl: 12.8rem;
+  --spacing-xs: 0.4rem; /* 4px */
+  --spacing-sm: 0.8rem; /* 8px */
+  --spacing-base: 1.6rem; /* 16px */
+  --spacing-md: 2.4rem; /* 24px */
+  --spacing-lg: 4rem; /* 40px */
+  --spacing-xl: 6.4rem; /* 64px */
+  --spacing-2xl: 9.6rem; /* 96px */
+  --spacing-3xl: 12.8rem; /* 128px */
+  --spacing-4xl: 16rem; /* 160px */
+  --spacing-5xl: 20rem; /* 200px */
 }
 
 body {
@@ -37,7 +41,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 60vh;
+  min-height: 90vh;
+  padding: var(--spacing-lg);
+}
+
+h1 {
+  font-family: "Lovers Quarrel", serif;
+  font-size: var(--spacing-5xl);
+  text-align: center;
 }
 
 .hero-description {
@@ -45,4 +56,19 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+}
+
+.hero-description p:first-of-type {
+  font-family: "Cormorant", serif;
+  font-size: var(--spacing-lg);
+  font-weight: 300;
+  margin-bottom: var(--spacing-base);
+  letter-spacing: -2px;
+}
+
+.hero-description p:last-of-type {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--spacing-base);
+  font-weight: 100;
+  width: 65%;
 }
